@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimarket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Minimarket</h1>
+    
+    <div id="product-form">
+        <h2>Agregar Producto</h2>
+        <label for="product-name">Nombre:</label>
+        <input type="text" id="product-name">
+        <label for="product-price">Precio:</label>
+        <input type="number" id="product-price" step="0.01">
+        <label for="product-quantity">Cantidad:</label>
+        <input type="number" id="product-quantity">
+        <button id="add-product">Agregar Producto</button>
+    </div>
+
+    <div id="product-list">
+        <h2>Lista de Productos</h2>
+        <ul id="product-items"></ul>
+    </div>
+
+    <div id="sales-form">
+        <h2>Registrar Venta</h2>
+        <label for="sale-product">Producto:</label>
+        <select id="sale-product"></select>
+        <label for="sale-quantity">Cantidad:</label>
+        <input type="number" id="sale-quantity">
+        <button id="register-sale">Registrar Venta</button>
+    </div>
+
+    <div id="sales-summary">
+        <h2>Resumen de Ventas</h2>
+        <p id="total-sales">Total Ventas: $0.00</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
